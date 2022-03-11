@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-text: #ffffff;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #E9D0E6;
+}
+
+.header span {
+    margin: 0px 7px;
+    cursor: pointer;
+}
+
+.header__menu-left span:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.background {
+    background-image: url('../images/macos-monterey-wwdc-21-stock-5k-6016x6016-5584.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.background__folder-detail {
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 40px;
+    max-width: 100px;
+    transition: ease-out 0.15s;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.background__folder-detail:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: ease-in 0.15s;
+}
+
+.background__folder-detail img {
+    width: 60px;
+}
+
+.background__folder-detail p {
+    font-size: 12px;
+    color: var(--white-text);
+}
+
+.background__file {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.background__file-detail {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;   
+    font-size: 14px; 
+}
+
+.background__file-left {
+    flex: 0 0 20%;
+    max-width: 20%;
+    background-color: rgb(243,190,242);
+    padding: 10px 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.control-btn {
+    margin-bottom: 15px;
+}
+
+.control-btn > span {
+    display: inline-block;
+    font-size: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.control-btn > span i {
+    opacity: 0;
+}
+
+.control-btn > span:hover i {
+    opacity: 1;
+    transition: ease-in 0.15s;
+}
+
+.control-btn > span:nth-child(1) {
+    padding: 1px 5px;
+    background-color: #F9262A;
+}
+
+.control-btn > span:nth-child(2) {
+    padding: 1px 4px;
+    background-color: #FFB500;
+}
+
+.control-btn > span:nth-child(3) {
+    padding: 1px 3.4px;
+    background-color: #02D400;
+}
+
+.background__file-right {
+    flex: 0 0 80%;
+    max-width: 80%;
+    background-color: rgb(255,255,255);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.control__file h4 {
+    color: #AB7CB8;
+}
+
+.file__cloud h4 {
+    margin-top: 20px;
+}
+
+.file__header {
+    padding: 15px 25px;
+    border-bottom: 1px solid #e1d7e4;
+}
+
+.file__pagination {
+    display: flex;
+    align-items: center;
+}
+
+.file__pagination i {
+    font-size: 18px;
+}
+
+.file__pagination i:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+.file__pagination i:nth-of-type(2) {
+    color: #A1A0A8;
+}
+
+.file__pagination h4 {
+    margin-left: 20px;
+}
+
+.file__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.file__tag {
+    display: flex;
+}
+
+.file__tag span i {
+    font-size: 18px;
+}
+
+.file__tag > span i:nth-of-type(1) {
+    margin-right: 40px;
+}
+
+.file__tag span i {
+    margin-right: 10px;
+}
+
+.file__tag-main span:last-of-type i {
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+.control__file span {
+    display: block;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.control__file i {
+    font-size: 14px;
+    width: 15px;
+    margin-right: 10px;
+    color: #2C72CA;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer__icons {
+    display: inline-block;
+    padding: 6px 20px 0px 20px;
+    background-color: #B655FC;
+    border-radius: 20px;
+}
+
+.footer span img {
+    width: 60px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+
+.footer span img:hover {
+    transition: ease-in-out 0.2s;
+    transform: scale(1.3);
+}
+
+.file__content {
+    padding-left: 20px ;
+}
+
+
+.file__content table {
+    width: 100%;
+}
+
+.file__content table tbody tr:nth-of-type(1) th{
+    padding-bottom: 10px;
+}
+
+.file__content table tr th {
+    text-align: left;
+}
+
+.file_row td {
+    padding: 5px 0px;
+}
+
+.file_row td:nth-of-type(1) {
+    width: 50%;
+}
+
+.file_row td i {
+    margin-right: 5px;
+}
+
+.file_row td img {
+    height: 100%;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.alt-icon {
+    display: inline-block;
+    width: 10px;
+}
+
+.chrome {
+    cursor: pointer;
+}
+
+.chrome td a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
